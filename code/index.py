@@ -3,6 +3,57 @@ import arrow
 
 app = Flask(__name__)
 
+# 应用搜索，指定应用商店，地区，关键词（包名/appid）,page,pagesize
+
+
+@app.route("/search", methods=["GET", "POST", "PUT", "DELETE"])
+@app.route("/search/<path:path>", methods=["GET", "POST", "PUT", "DELETE"])
+def search(path):
+    market = request.args.get("market")
+    region = request.args.get("region")
+    keyword = request.args.get("keyword")
+    page = request.args.get("page")
+    pagesize = request.args.get("pagesize")
+    requestId = request.headers.get("x-fc-request-id")
+    print("FC Invoke Start RequestId: " + requestId)
+
+    response = jsonify(
+        {
+            "msg": "Hello, World!" + " at " + arrow.now().format("YYYY-MM-DD HH:mm:ss"),
+            "request": {
+                "market": market,
+                "region": region,
+                "keyword": keyword,
+            },
+        }
+    )
+    print("FC Invoke End RequestId: " + requestId)
+    return response
+
+
+# 应用详情，指定应用商店，地区，包名/appid
+@app.route("/detail", methods=["GET", "POST", "PUT", "DELETE"])
+@app.route("/detail/<path:path>", methods=["GET", "POST", "PUT", "DELETE"])
+def detail(path):
+    market = request.args.get("market")
+    region = request.args.get("region")
+    appid = request.args.get("appid")
+    requestId = request.headers.get("x-fc-request-id")
+    print("FC Invoke Start RequestId: " + requestId)
+
+    response = jsonify(
+        {
+            "msg": "Hello, World!" + " at " + arrow.now().format("YYYY-MM-DD HH:mm:ss"),
+            "request": {
+                "market": market,
+                "region": region,
+                "appid": appid,
+            },
+        }
+    )
+    print("FC Invoke End RequestId: " + requestId)
+    return response
+
 
 @app.route("/", defaults={"path": ""}, methods=["GET", "POST", "PUT", "DELETE"])
 @app.route("/<path:path>", methods=["GET", "POST", "PUT", "DELETE"])
