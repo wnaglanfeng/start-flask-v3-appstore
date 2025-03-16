@@ -1,0 +1,88 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "App Store API",
+    "version": "1.0.0",
+    "description": "应用商店API文档"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:9000",
+      "description": "本地开发环境"
+    }
+  ],
+  "paths": {
+    "/appstore/search": {
+      "get": {
+        "summary": "应用搜索",
+        "parameters": [
+          {
+            "name": "market",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "region",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "keyword",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "成功响应"
+          }
+        }
+      }
+    },
+    "/appstore/detail": {
+      "get": {
+        "summary": "应用详情",
+        "parameters": [
+          {
+            "name": "market",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "region",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "appid",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "成功响应"
+          }
+        }
+      }
+    }
+  }
+}

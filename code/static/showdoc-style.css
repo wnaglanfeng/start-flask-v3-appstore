@@ -1,0 +1,139 @@
+:root {
+    /* 现代调色板 */
+    --primary-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+    --glass-bg: rgba(255, 255, 255, 0.85);
+    --dark-glass-bg: rgba(17, 24, 39, 0.9);
+    --neon-border: rgba(99, 102, 241, 0.4);
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --glass-bg: rgba(31, 41, 55, 0.9);
+    }
+  }
+  
+  .swagger-ui {
+    /* 动态布局 */
+    font-family: 'Inter Variable', system-ui, sans-serif;
+    max-width: min(1400px, 95vw);
+    margin-inline: auto;
+    padding: 2rem clamp(1rem, 5vw, 3rem);
+    
+    /* 现代字体渲染 */
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 玻璃形态标题栏 */
+  .topbar {
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    background: var(--glass-bg) !important;
+    border: 1px solid var(--neon-border);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+    border-radius: 1rem;
+    margin: 1rem 0;
+    padding: 1.25rem 2rem !important;
+  }
+  
+  /* 动态渐变Logo */
+  .topbar .link img {
+    filter: drop-shadow(0 2px 4px rgba(99, 102, 241, 0.3));
+    transition: transform 0.3s ease;
+  }
+  
+  .topbar .link:hover img {
+    transform: scale(1.05) rotate(-5deg);
+  }
+  
+  /* 现代卡片式操作组 */
+  .opblock-tag {
+    background: var(--glass-bg);
+    border-radius: 1rem;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .opblock-tag:hover {
+    transform: translateY(-2px);
+  }
+  
+  /* 请求方法炫光效果 */
+  .opblock .opblock-summary-method {
+    min-width: 5rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    border: 2px solid;
+    background-clip: padding-box;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .opblock-post .opblock-summary-method {
+    background: var(--primary-gradient);
+    border-color: transparent !important;
+  }
+  
+  /* 参数区动态光效 */
+  .parameters {
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  
+  .parameters::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background: var(--primary-gradient);
+    border-radius: 3px;
+  }
+  
+  /* 响应示例动态标记 */
+  .response-col_status::after {
+    content: '➤';
+    margin-left: 0.5rem;
+    opacity: 0.6;
+    transition: transform 0.3s ease;
+  }
+  
+  .response-col_status:hover::after {
+    transform: translateX(3px);
+  }
+  
+  /* 深度学习动效 */
+  @media (hover: hover) {
+    .opblock-summary:hover {
+      transform: perspective(500px) translateZ(10px);
+    }
+    
+    .models-control:hover {
+      background: var(--primary-gradient);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    }
+  }
+  
+  /* 动态过度滚动 */
+  .swagger-ui > * {
+    view-timeline-name: --card;
+    view-timeline-axis: block;
+  
+    animation: slide-in linear;
+    animation-timeline: --card;
+    animation-range: entry 25% cover 35%;
+  }
+  
+  @keyframes slide-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+  

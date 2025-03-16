@@ -1,0 +1,17 @@
+/* 修改标题样式 */
+.swagger-ui .info .title {
+    font-size: 32px;
+    color: #3b4151;
+}
+
+/* 修改操作按钮样式 */
+.swagger-ui .opblock .opblock-summary {
+    background-color: #f6f6f6;
+    border-radius: 4px;
+}
+
+/* 修改响应区域样式 */
+.swagger-ui .responses-wrapper {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
