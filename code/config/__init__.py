@@ -55,7 +55,7 @@ class DevelopmentConfig(Config):
     LOG_LEVEL = 'DEBUG',
     ALLOWED_IPS = {'127.0.0.1', '192.168.1.1'}  # 添加默认允许的IP地址
      # 从 data/allowed_ips.txt 文件加载允许的 IP 地址
-    def _load_allowed_ips(self):
+    def _load_allowed_ips():
         allowed_ips = {'127.0.0.1', '192.168.1.1'}  # 默认 IP 地址
         try:
             with open('data/allowed_ips.txt', 'r') as f:
