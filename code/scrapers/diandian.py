@@ -5,6 +5,10 @@ import re
 import os
 import time
 
+from typing import Dict, Any, Optional
+from config.market import markets
+from config.country import countries
+
 class DiandianScraper:
     def __init__(self):
         self.current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -50,77 +54,82 @@ class DiandianScraper:
                 return market, market_info['available_regions'][0]
         return market, region
 
-    def search(self, market, region, keyword, page, pagesize):
+    def _generate_search_params(self, market: str, region: str, keyword: str, page: int, pagesize: int) -> Dict[str, str]:
+        """生成搜索参数"""
+        market_info = markets.get(market)
+        region_info = countries.get(region)
+        
+        current_time = int(time.time())
+        compare_time = current_time - (current_time % 86400) - 86400
+        
+        return {
+            'market_id': str(market_info['dd_market_id']),
+            'country_id': str(region_info['dd_country_id']),
+            'word': requests.utils.quote(keyword),
+            'device_id': '',
+            'system_type': '4' if market_info['type'] == 'ios' else '',
+            'time': str(current_time),
+            'compare_time': str(compare_time),
+            'result_type': '',
+            'payment_type': '',
+            'page': str(page),
+            'page_size': str(pagesize),
+            'width_google_other_data': '0',
+            'market_type': '0' if market == 'ios' else '-1'
+        }
+
+    def search(self, market: str, region: str, keyword: str, page: int = 1, pagesize: int = 20) -> Dict[str, Any]:
         # 验证应用商店和地区
         market, region = self._validate_market_and_region(market, region)
         
-        # 获取对应的 dd_market_id
-        from config.market import markets
-        market_info = markets.get(market)
-        if not market_info or 'dd_market_id' not in market_info:
-            raise ValueError(f"Invalid market or missing dd_market_id: {market}")
-
-        dd_market_id = market_info['dd_market_id']
-        # 如果部分地区可用，
- 
-        # 获取对应的 dd_region_id
-        from config.country import countries
-        region_info = countries.get(region)
-        if not region_info or 'dd_country_id' not in region_info:
-            raise ValueError(f"Invalid region or missing dd_country_id: {region}")
-        dd_country_id = region_info['dd_country_id']
-        # 根据 type 设置 system_type
-        system_type = '4' if market_info['type'] == 'ios' else ''
-    
-    
-    
+        # 生成搜索参数
+        params = self._generate_search_params(market, region, keyword, page, pagesize)
+        
+        # 执行JS加密
         with open(self.js_path, 'r', encoding='utf-8') as f:
             js_code = f.read()
         js = execjs.compile(js_code)
-
+        
+        # 获取加密参数
         content = requests.get("https://app.diandian.com/", headers=self.headers, cookies=self.cookies).text
         s = re.findall('u:\{s:"(.*?)"', content)[0]
         k = re.findall('u:\{.*?k:"(.*?)"', content)[0]
         l = re.findall('u:\{.*?l:"(.*?)"', content)[0]
+        
+        data = {'s': s, 'k': k, 'l': l, 'd': 0, 'sort': 'dd', 'num': 10}
+        params['k'] = js.call('gen_search_k', params, data)
+        
+        # 发送请求
+        response = requests.get(
+            'https://api.diandian.com/pc/app/v2/word/search',
+            params=params,
+            headers=self.headers,
+            cookies=self.cookies
+        )
+        return response.json()
 
-        current_time = int(time.time())
-        compare_time = current_time - (current_time % 86400) - 86400
-        #IOS 可以过
-        params1 = {
-            'market_id': '1',
-            'country_id': '75',
-            'word': '%E5%BF%AB%E6%89%8B',
-            'device_id': '',
-            'system_type': '4',
-            'time': '1742070143',
-            'compare_time': '1741968000',
-            'result_type': '',
-            'payment_type': '',
-            'page': '1',
-            'page_size': '20',
-            'width_google_other_data': '0',
-            'market_type': '0'
-        }
-        #国内 Android 可以过
+    def detail(self, market: str, region: str, appid: str) -> Dict[str, Any]:
+        # 获取加密参数
+        content = requests.get("https://app.diandian.com/", headers=self.headers, cookies=self.cookies).text
+        s = re.findall('u:\{s:"(.*?)"', content)[0]
+        k = re.findall('u:\{.*?k:"(.*?)"', content)[0]
+        l = re.findall('u:\{.*?l:"(.*?)"', content)[0]
+        
+        # 验证应用商店和地区
+        market, region = self._validate_market_and_region(market, region)
+        
+        # 获取市场和国家信息
+        market_info = markets.get(market)
+        region_info = countries.get(region)
+        
+        # 生成请求参数
         params = {
-            'market_id': f'{dd_market_id}',
-            'country_id': f'{dd_country_id}',
-            'word': requests.utils.quote(keyword),
-            'device_id': '',
-            'system_type': system_type,
-            'time': str(current_time),
-            'compare_time':str(compare_time),
-            'result_type': '',
-            'payment_type': '',
-            'page': f'{page}',
-            'page_size': f'{pagesize}',
-            'width_google_other_data': '0',
-            'market_type': '0' if market == 'ios' else '-1'
+            'market_id': f'{str(market_info['dd_market_id'])}',
+            'id': f'{appid}',
+            'country_id': f'{str(region_info['dd_country_id'])}',
+            'language_id': '3'  # 默认语言ID，可根据需要调整
         }
-        for key in params1:
-            if params1[key] != params.get(key):
-                print(f"键 {key} 不同: params1={params1[key]}, params2={params.get(key)}")
-                
+        
         data = {
             's': s,
             'k': k,
@@ -129,10 +138,18 @@ class DiandianScraper:
             'sort': 'dd',
             'num': 10
         }
-        params['k'] = js.call('gen_search_k', params, data)
-        response = requests.get('https://api.diandian.com/pc/app/v2/word/search', params=params, headers=self.headers, cookies=self.cookies)
+        
+        # 执行JS加密
+        with open(self.js_path, 'r', encoding='utf-8') as f:
+            js_code = f.read()
+        js = execjs.compile(js_code)
+        params['k'] = js.call('gen_detail_k', params, data)
+        
+        # 发送请求
+        response = requests.get(
+            'https://api.diandian.com/pc/app/v1/app/info',
+            params=params,
+            headers=self.headers,
+            cookies=self.cookies
+        )
         return response.json()
-
-    def detail(self, market, region, appid):
-        # 实现点点平台的详情逻辑
-        pass

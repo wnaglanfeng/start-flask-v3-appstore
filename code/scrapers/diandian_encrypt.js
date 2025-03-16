@@ -87,3 +87,11 @@ function gen_search_k(params,data) {
         , o = _(r, path, data, "get");
     return o
 }
+
+function gen_detail_k(params,data) {
+    path = "/v1/app/info"
+    we.params = params
+    var r = we.params
+        , o = _(r, path, data, "get");
+    return o
+}

@@ -72,7 +72,7 @@ def detail():
         market = request.args.get("market")
         region = request.args.get("region")
         appid = request.args.get("appid")
-        
+        sp = request.args.get("sp",default="diandian")
         # 参数校验
         if not all([market, region, appid]):
             return build_response("MISSING_PARAMETERS"), 400
