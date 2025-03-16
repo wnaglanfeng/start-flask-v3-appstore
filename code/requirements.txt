@@ -4,3 +4,4 @@ Flask
 requests
 selenium
 flask_swagger_ui
+PyExecJS
