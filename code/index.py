@@ -21,6 +21,7 @@ def before_request():
         
         # 验证 IP 是否在白名单中
         if client_ip not in app.config['ALLOWED_IPS']:
+            print(f"Access denied for IP: {client_ip}")
             logger.warning(f"Access denied for IP: {client_ip}")
             return jsonify({"msg": "Access denied"}), 403
         
