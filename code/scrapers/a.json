@@ -1,0 +1,377 @@
+{
+    "code": 20000,
+    "data": {
+        "code": 0,
+        "data": {
+             "count": 217,
+            "last_time": 1742115063,
+            "list": [
+                {
+                   
+                    "ad_count": 12,
+                    "app": {
+                        "app_id": 440948110,
+                        "bundle_id": "com.jiangjia.gif",
+                        "category_id": 1,
+                        "content_ratings": "17+",
+                        "country_id": 75,
+                        "description": "「有趣视频，一看就上瘾」\n好看的、好玩的、好笑的短视频，都在这。\n\n「一起同框，越玩越有戏」\n随时随地多人同框，搭戏模仿，有趣更有戏。\n\n「互动直播，有你更出众」\n随时随地侃大山，好看的小哥哥小姐姐都爱玩的直播在这里。\n\n「支持原创，潇洒做自己」\n脑洞大，才艺多，有绝活，给你大舞台。\n\n「美颜滤镜，拍出你的美」\n30款美颜滤镜，上百种魔法表情；要萌要酷随你变，怎么变都好看。\n",
+                        "developer": {
+                            "id": "e6b8ecc5a504b51d6bc3a8c22ca9d8af",
+                            "logo": "",
+                            "name": "Beijing Kwai Technology Co., Ltd.",
+                            "web_url": ""
+                        },
+                        "device_families": [
+                            "iphone",
+                            "ipad",
+                            "ipod"
+                        ],
+                        "genre": {
+                            "category_id": 1,
+                            "id": 132,
+                            "name": "摄影与录像"
+                        },
+                        "genre_id": 132,
+                        "genre_ids": [
+                            132,
+                            137,
+                            173
+                        ],
+                        "genre_ranking": 3,
+                        "genres": [
+                            {
+                                "category_id": 1,
+                                "id": 132,
+                                "name": "摄影与录像"
+                            },
+                            {
+                                "category_id": 1,
+                                "id": 137,
+                                "name": "社交"
+                            }
+                        ],
+                        "id": "492ududjqxzr9aj",
+                        "languages": [
+                            "简体中文",
+                            "繁体中文",
+                            "英语"
+                        ],
+                        "last_release_time": 1741881600,
+                        "logo": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8b/97/64/8b9764fe-7d75-f9d9-4b46-773f07ce643a/AppIcon-0-0-1x_U007emarketing-0-8-0-0-sRGB-85-220.png/1024x1024.png",
+                        "market_id": 1,
+                        "mode_type": "",
+                        "name": "快手",
+                        "price": 0,
+                        "price_unit": "¥",
+                        "rating": 4.8,
+                        "rating_count": 14534467,
+                        "rating_count_list": [
+                            "341760",
+                            "112609",
+                            "144555",
+                            "241304",
+                            "13694239"
+                        ],
+                        "release_time": 1309449600,
+                        "screenshot_type": 2,
+                        "screenshots": [
+                            {
+                                "list": [
+                                    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/15/70/e1/1570e1b3-e9b8-4de4-a5f1-b3c078e15f94/_U4e3b_U7ad9-_U6d88_U8d391320_2868.jpg/414x896bb.png",
+                                    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/79/83/ae/7983aeab-6c93-8df1-54c2-7dec3666a897/_U4e3b_U7ad9-_U76f4_U64ad1320_2868.jpg/414x896bb.png",
+                                    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9f/d8/10/9fd81021-893c-62c1-7388-1503aee6ae41/_U4e3b_U7ad9-_U7279_U65481320_2868.jpg/414x896bb.png",
+                                    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ff/79/d1/ff79d123-f977-ebfb-aa14-217037bb01ac/_U4e3b_U7ad9-_U540c_U57ce1320_2868.jpg/414x896bb.png",
+                                    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5d/6d/af/5d6daf33-d164-9814-12e3-04a7ed165a6e/_U4e3b_U7ad9-_U70ed_U699c1320_2868.jpg/414x896bb.png",
+                                    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/50/94/9d/50949db4-53e5-b455-59a2-07374a5b9ac8/_U4e3b_U7ad9-_U641c_U7d221320_2868.jpg/414x896bb.png"
+                                ],
+                                "name": "iPhone"
+                            },
+                            {
+                                "list": [
+                                    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/53/70/db/5370db97-3827-1494-1621-eb9a4ce3258d/aadb679e-5116-4066-9fc2-48428cffcade__U4e3b_U7ad9-_U6d88_U8d392048x2732.png/414x896bb.png",
+                                    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/cc/24/6e/cc246e9d-03cf-9e95-c8bc-6bce9685984b/4f0f03a0-4ab8-420a-89ab-9649bcda4b84__U4e3b_U7ad9-_U76f4_U64ad2048_2732.png/414x896bb.png",
+                                    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a9/9f/9c/a99f9c36-2e61-97ca-8ded-5a8b4860c08f/400203ae-5490-4534-9af7-14d6928ce871__U4e3b_U7ad9-_U7279_U65482048_2732.png/414x896bb.png",
+                                    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/12/98/04/1298042e-511c-17cc-f395-44f8f1d5d64a/0270bdaf-9f09-4545-8e63-76182c202115__U4e3b_U7ad9-_U540c_U57ce2048x2732.png/414x896bb.png",
+                                    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ef/f8/e2/eff8e27b-fc13-93a7-4d12-a265e475adcc/716844cb-da8f-48d0-9195-b40edd383fe3__U4e3b_U7ad9-_U70ed_U699c2048x2732.png/414x896bb.png",
+                                    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3a/71/e7/3a71e7fd-0b2a-349d-23c2-ba396d6ebd45/cf5cec46-f289-4767-bc8c-e9fd973fd784__U4e3b_U7ad9-_U641c_U7d222048x2732.png/414x896bb.png"
+                                ],
+                                "name": "iPad"
+                            }
+                        ],
+                        "sizes": "466069504",
+                        "status_id": 2,
+                        "title": "拥抱每一种生活",
+                        "top_in_apps": [
+                            {
+                                "description": "42快币，快币是快手官方的虚拟货币。可以使用快币在直播页面购买礼物。",
+                                "is_subscription": 0,
+                                "name": "42快币",
+                                "price": "¥6.00"
+                            },
+                            {
+                                "description": "7快币，快币是快手官方的虚拟货币。可以使用快币在直播页面购买礼物。",
+                                "is_subscription": 0,
+                                "name": "7快币",
+                                "price": "¥1.00"
+                            },
+                            {
+                                "description": "280快币，快币是快手官方的虚拟货币。可以使用快币在直播页面购买礼物。",
+                                "is_subscription": 0,
+                                "name": "280快币",
+                                "price": "¥40.00"
+                            },
+                            {
+                                "description": "476快币，快币是快手官方的虚拟货币。可以使用快币在直播页面购买礼物。",
+                                "is_subscription": 0,
+                                "name": "476快币",
+                                "price": "¥68.00"
+                            },
+                            {
+                                "description": "686快币，快币是快手官方的虚拟货币。可以使用快币在直播页面购买礼物。",
+                                "is_subscription": 0,
+                                "name": "686快币",
+                                "price": "¥98.00"
+                            },
+                            {
+                                "description": "84快币，快币是快手官方的虚拟货币。可以使用快币在直播页面购买礼物。",
+                                "is_subscription": 0,
+                                "name": "84快币",
+                                "price": "¥12.00"
+                            },
+                            {
+                                "description": "1386快币，快币是快手官方的虚拟货币。可以使用快币在直播页面购买礼物。",
+                                "is_subscription": 0,
+                                "name": "1386快币",
+                                "price": "¥198.00"
+                            },
+                            {
+                                "description": "14快币，快币是快手官方的虚拟货币。可以使用快币在直播页面购买礼物。",
+                                "is_subscription": 0,
+                                "name": "14快币",
+                                "price": "¥2.00"
+                            },
+                            {
+                                "description": "用于购买快手付费内容相关权益",
+                                "is_subscription": 0,
+                                "name": "付费内容5.8元",
+                                "price": "¥5.80"
+                            },
+                            {
+                                "description": "用于购买快手付费内容相关权益",
+                                "is_subscription": 0,
+                                "name": "付费内容14.8元",
+                                "price": "¥14.80"
+                            }
+                        ],
+                        "total_ranking": 29,
+                        "version": "13.2.20",
+                        "videos": []
+                    },
+                    "developer": null,
+                    "in_app_purchase": {
+                        "app": {}
+                    },
+                    "new_in_rank": 0,
+                    "rank_increase": 0,
+                    "story": {},
+                    "top3_words_count": 3330,
+                    "type": 1,
+                    "words_count": 115664
+                },
+                {
+                    "activity": {
+                        "app_id": 1472502819,
+                        "country_id": 75,
+                        "cover": "https://is1-ssl.mzstatic.com/image/thumb/JZENfFmrUBTcCeIcNPbKkA/1120x700bb.png",
+                        "description": "春季盛典活动倾情汇聚高价值内容垂类主播与潮流代表性人气主播等优质主播，开展才艺竞技赛事、线下演出等内容活动，同时上线各大人气榜单、快手状元等趣味玩法，举力打造集观赏性、荣誉性及互动性于一体的快手直播生态顶级盛会。",
+                        "end_time": 1742284800,
+                        "id": 6742734778,
+                        "kind": "直播活动",
+                        "name": "2025快手直播春季盛典",
+                        "start_time": 1741068000,
+                        "status_id": 3,
+                        "sub_title": "臻享尊贵礼遇，共赴荣耀之巅",
+                        "url": "https://apps.apple.com/cn/app/id1472502819?eventid=6742734778"
+                    },
+                    "ad_count": 4,
+                    "app": {
+                        "app_id": 1472502819,
+                        "bundle_id": "com.kuaishou.nebula",
+                        "category_id": 1,
+                        "content_ratings": "17+",
+                        "country_id": 75,
+                        "description": "【更快】\n小安装包，极速下载。浏览更省流量，运行丝滑流畅。\n\n【更赞】\n覆盖全网千万精彩原创小视频，分享真实有趣的生活。\n\n【更好看】\n海量视频精挑细选，智能算法推荐。看更流行的，玩更热门的，只看你想看的视频。\n\n主播就在眼前，第一时间与你热力互动。直播间PK新玩法频出，即时对战刺激好看，谁赢由你说了算！\n\n联系快手极速版：\n官方交流QQ群：827910592\n官方客服电话：01053911309 （10:00-19:00）",
+                        "developer": {
+                            "id": "c451c34e5b46337ed64dfc49fe342a67",
+                            "logo": "",
+                            "name": "华艺汇龙",
+                            "web_url": ""
+                        },
+                        "device_families": [
+                            "iphone",
+                            "ipad",
+                            "ipod"
+                        ],
+                        "genre": {
+                            "category_id": 1,
+                            "id": 132,
+                            "name": "摄影与录像"
+                        },
+                        "genre_id": 132,
+                        "genre_ids": [
+                            132,
+                            173
+                        ],
+                        "genre_ranking": 7,
+                        "genres": [
+                            {
+                                "category_id": 1,
+                                "id": 132,
+                                "name": "摄影与录像"
+                            }
+                        ],
+                        "id": "y8dujuzxe180wuq",
+                        "languages": [
+                            "简体中文",
+                            "繁体中文",
+                            "英语"
+                        ],
+                        "last_release_time": 1741881600,
+                        "logo": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/14/97/c7/1497c72d-dfe3-31e8-5581-1687ccfe7384/AppIconNebula-0-0-1x_U007emarketing-0-8-0-0-sRGB-85-220.png/1024x1024.png",
+                        "market_id": 1,
+                        "mode_type": "",
+                        "name": "快手极速版",
+                        "price": 0,
+                        "price_unit": "¥",
+                        "rating": 4.8,
+                        "rating_count": 3827874,
+                        "rating_count_list": [
+                            "90010",
+                            "37181",
+                            "48637",
+                            "79997",
+                            "3572049"
+                        ],
+                        "release_time": 1565884800,
+                        "screenshot_type": 2,
+                        "screenshots": [
+                            {
+                                "list": [
+                                    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/be/fc/d5/befcd584-0c0a-022e-a081-5755f99bc1ab/_U6781_U901f_U7248-_U6d88_U8d391320_2868.jpg/414x896bb.png",
+                                    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2f/73/11/2f7311d9-f38e-8e7a-6c77-b34c8c67f958/_U4e3b_U7ad9-_U76f4_U64ad1320_2868.jpg/414x896bb.png",
+                                    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6a/4d/e2/6a4de214-bbe9-f5f3-fe28-8ba9e6345bfe/_U4e3b_U7ad9-_U7279_U65481320_2868.jpg/414x896bb.png",
+                                    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/eb/5e/7d/eb5e7d28-56ae-db25-6e83-504c56f1e627/_U6781_U901f_U7248-_U540c_U57ce1320_2868.jpg/414x896bb.png",
+                                    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/53/41/12/53411260-29e5-6221-4dbd-a09e88e8e077/_U4e3b_U7ad9-_U70ed_U699c1320_2868.jpg/414x896bb.png",
+                                    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/15/8d/95/158d9527-1288-f46b-f44d-7fb500326a3a/_U4e3b_U7ad9-_U641c_U7d221320_2868.jpg/414x896bb.png"
+                                ],
+                                "name": "iPhone"
+                            },
+                            {
+                                "list": [
+                                    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e8/10/e3/e810e34c-6995-3b43-b6c3-42f231212de7/616fc326-7f5b-4969-9aa0-6ed167098e11__U6781_U901f_U7248-_U6d88_U8d392048x2732.png/414x896bb.png",
+                                    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b4/e9/3d/b4e93d16-fe6e-ead2-4778-c9cb2534d3d2/fb0bfc9e-e62d-4c62-8679-8b554f85c4b8__U6781_U901f_U7248-_U76f4_U64ad2048_2732.png/414x896bb.png",
+                                    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3c/4e/19/3c4e19a2-5d7b-7340-b6ec-eeb2a2a72430/289b3e88-fb9f-4e78-b542-07689d98a13f__U6781_U901f_U7248-_U7279_U65482048x2732.png/414x896bb.png",
+                                    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e5/b1/b6/e5b1b68f-9500-2dfc-591d-b3ee0d9ce387/6ec2426b-bc9b-41d3-b4c1-84b91c43ec06__U6781_U901f_U7248-_U540c_U57ce2048x2732.png/414x896bb.png",
+                                    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b7/44/67/b7446759-ec2e-d0ed-6d67-ef940a2d4744/ccbe94c0-c2be-4fdb-8eb2-b19417716551__U6781_U901f_U7248-_U70ed_U699c2048x2732.png/414x896bb.png",
+                                    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2a/d3/db/2ad3db8d-fd55-65a0-ddea-187b1d6c807e/164db655-631a-4474-bf20-b3cc508fd143__U4e3b_U7ad9-_U641c_U7d222048x2732.png/414x896bb.png"
+                                ],
+                                "name": "iPad"
+                            }
+                        ],
+                        "sizes": "467248128",
+                        "status_id": 2,
+                        "title": "看视频看直播",
+                        "top_in_apps": [
+                            {
+                                "description": "42快币,快币是快手官方的虚拟货币,可以使用快币在直播页面购买礼物.",
+                                "is_subscription": 0,
+                                "name": "42快币",
+                                "price": "¥6.00"
+                            },
+                            {
+                                "description": "7快币，快币是快手官方的虚拟货币。可以使用快币在直播页面购买礼物。",
+                                "is_subscription": 0,
+                                "name": "7快币",
+                                "price": "¥1.00"
+                            },
+                            {
+                                "description": "280快币,快币是快手官方的虚拟货币,可以使用快币在直播页面购买礼物.",
+                                "is_subscription": 0,
+                                "name": "280快币",
+                                "price": "¥40.00"
+                            },
+                            {
+                                "description": "14快币，快币是快手官方的虚拟货币。可以使用快币在直播页面购买礼物。",
+                                "is_subscription": 0,
+                                "name": "14快币",
+                                "price": "¥2.00"
+                            },
+                            {
+                                "description": "用于购买快手付费内容相关权益",
+                                "is_subscription": 0,
+                                "name": "付费内容5.8元",
+                                "price": "¥5.80"
+                            },
+                            {
+                                "description": "用于购买快手付费内容相关权益",
+                                "is_subscription": 0,
+                                "name": "付费内容14.8元",
+                                "price": "¥14.80"
+                            },
+                            {
+                                "description": "476快币,快币是快手官方的虚拟货币,可以使用快币在直播页面购买礼物.",
+                                "is_subscription": 0,
+                                "name": "476快币",
+                                "price": "¥68.00"
+                            },
+                            {
+                                "description": "686快币,快币是快手官方的虚拟货币,可以使用快币在直播页面购买礼物.",
+                                "is_subscription": 0,
+                                "name": "686快币",
+                                "price": "¥98.00"
+                            },
+                            {
+                                "description": "用于购买快手付费内容相关权益",
+                                "is_subscription": 0,
+                                "name": "付费内容9.9元",
+                                "price": "¥9.90"
+                            },
+                            {
+                                "description": "21快币，快币是快手官方的虚拟货币。可以使用快币在直播页面购买礼物。",
+                                "is_subscription": 0,
+                                "name": "21快币",
+                                "price": "¥3.00"
+                            }
+                        ],
+                        "total_ranking": 63,
+                        "version": "13.2.20",
+                        "videos": []
+                    },
+                    "developer": null,
+                    "in_app_purchase": {
+                        "app": {}
+                    },
+                    "new_in_rank": 0,
+                    "rank_increase": 0,
+                    "story": {},
+                    "top3_words_count": 1202,
+                    "type": 1,
+                    "words_count": 32403
+                },
+               
+            ],
+            "offline_app": null,
+            "update_time": 1742054400,
+            "word": {
+                "index": 11248,
+                "popularity": 94,
+                "results_count": 217,
+                "search_traffic": null,
+                "suggested_word": null
+            }
+        },
+        "msg": "success"
+    },
+    "msg": "成功"
+}
