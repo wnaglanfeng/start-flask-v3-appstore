@@ -43,3 +43,10 @@ Flask 应用的基础配置
 现在可以通过 URL 查询参数传递 IP 地址，例如：
 添加 IP：/api/security/ip/allow?ip=192.168.1.100
 移除 IP：/api/security/ip/deny?ip=192.168.1.100
+
+下载并运行 NodeSource 安装脚本：
+
+curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
+
+安装 Node.js：
+apt install -y nodejs
