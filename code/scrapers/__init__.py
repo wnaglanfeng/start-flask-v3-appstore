@@ -2,6 +2,8 @@ from .diandian import DiandianScraper
 from .qimai import QimaiScraper
 from .market import MarketScraper
 from .huawei import HuaweiScraper
+from .ios import IosScraper
+    
 
 # 定义标准化的应用信息结构
 APP_INFO = {

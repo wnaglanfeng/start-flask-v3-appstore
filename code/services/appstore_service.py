@@ -1,5 +1,4 @@
-from scrapers import DiandianScraper, QimaiScraper, MarketScraper, HuaweiScraper
-from scrapers.ios import IosScraper
+from scrapers import DiandianScraper, QimaiScraper, MarketScraper, HuaweiScraper,IosScraper
 
 class AppStoreService:
     def __init__(self):
