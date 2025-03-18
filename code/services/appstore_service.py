@@ -1,10 +1,13 @@
-from scrapers import DiandianScraper, QimaiScraper, MarketScraper
+from scrapers import DiandianScraper, QimaiScraper, MarketScraper, HuaweiScraper
+from scrapers.ios import IosScraper
 
 class AppStoreService:
     def __init__(self):
         self.scrapers = {
             "diandian": DiandianScraper(),
-            "qimai": QimaiScraper()
+            "qimai": QimaiScraper(),
+            "huawei": HuaweiScraper(),  # 新增华为支持
+            "ios": IosScraper(),  # 新增iOS支持
         }
 
     def search(self, market, region, keyword, page, pagesize, sp="diandian"):
@@ -26,7 +29,7 @@ class AppStoreService:
         # 调用抓取器搜索方法
         return scraper.search(market, region, keyword, page, pagesize)
 
-    def detail(self, market, region, appid, scraper_type="diandian"):
+    def detail(self, market, region, appid, st="diandian"):
         """
         获取应用详情
         :param market: 应用市场
@@ -36,7 +39,7 @@ class AppStoreService:
         :return: 应用详情
         """
         # 获取抓取器实例
-        scraper = self.scrapers.get(scraper_type)  # 修改变量名
+        scraper = self.scrapers.get(st)  # 修改变量名
         if not scraper:
             scraper = MarketScraper(market)  # 修改类名
 

@@ -3,559 +3,666 @@ countries = {
         "dd_country_id": "75",
         "name": "中国",
         "country_code": "CHN",
+        "simple_country_code": "CN",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/chn.png",
     },
     "USA": {
         "dd_country_id": "24",
         "name": "美国",
         "country_code": "USA",
+        "simple_country_code": "US",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/usa.png",
     },
     "TPE": {
         "dd_country_id": "125",
         "name": "中国台湾",
         "country_code": "TPE",
+        "simple_country_code": "TW",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/tpe.png",
     },
     "HKG": {
         "dd_country_id": "141",
         "name": "中国香港",
         "country_code": "HKG",
+        "simple_country_code": "HK",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/hkg.png",
     },
     "JPN": {
         "dd_country_id": "26",
         "name": "日本",
         "country_code": "JPN",
+        "simple_country_code": "JP",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/jpn.png",
     },
-    "KOR": {
+     "KOR": {
         "dd_country_id": "37",
         "name": "韩国",
         "country_code": "KOR",
+        "simple_country_code": "KR",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/kor.png",
     },
     "IND": {
         "dd_country_id": "101",
         "name": "印度",
         "country_code": "IND",
+        "simple_country_code": "IN",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/ind.png",
     },
     "MAS": {
         "dd_country_id": "168",
         "name": "马来西亚",
         "country_code": "MAS",
+        "simple_country_code": "MY",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/mas.png",
     },
     "CAN": {
         "dd_country_id": "78",
         "name": "加拿大",
         "country_code": "CAN",
+        "simple_country_code": "CA",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/can.png",
     },
     "BRA": {
         "dd_country_id": "3",
         "name": "巴西",
         "country_code": "BRA",
+        "simple_country_code": "BR",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/bra.png",
     },
     "ENGLAND": {
         "dd_country_id": "4",
         "name": "英国",
         "country_code": "ENGLAND",
+        "simple_country_code": "GB",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/england.png",
     },
     "RUS": {
         "dd_country_id": "47",
         "name": "俄罗斯",
         "country_code": "RUS",
+        "simple_country_code": "RU",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/rus.png",
     },
     "GER": {
         "dd_country_id": "13",
         "name": "德国",
         "country_code": "GER",
+        "simple_country_code": "DE",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/ger.png",
     },
     "AUS": {
         "dd_country_id": "41",
         "name": "澳大利亚",
         "country_code": "AUS",
+        "simple_country_code": "AU",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/aus.png",
     },
     "EGY": {
         "dd_country_id": "57",
         "name": "埃及",
         "country_code": "EGY",
+        "simple_country_code": "EG",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/egy.png",
     },
     "RSA": {
         "dd_country_id": "73",
         "name": "南非",
         "country_code": "RSA",
+        "simple_country_code": "ZA",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/rsa.png",
     },
     "BEL": {
         "dd_country_id": "1",
         "name": "比利时",
         "country_code": "BEL",
+        "simple_country_code": "BE",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/bel.png",
     },
     "FRA": {
         "dd_country_id": "2",
         "name": "法国",
         "country_code": "FRA",
+        "simple_country_code": "FR",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/fra.png",
     },
     "CRO": {
         "dd_country_id": "5",
         "name": "克罗地亚",
         "country_code": "CRO",
+        "simple_country_code": "HR",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/cro.png",
     },
     "URU": {
         "dd_country_id": "6",
         "name": "乌拉圭",
         "country_code": "URU",
+        "simple_country_code": "UY",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/uru.png",
     },
     "POR": {
         "dd_country_id": "7",
         "name": "葡萄牙",
         "country_code": "POR",
+        "simple_country_code": "PT",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/por.png",
     },
     "SUI": {
         "dd_country_id": "8",
         "name": "瑞士",
         "country_code": "SUI",
+        "simple_country_code": "CH",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/sui.png",
     },
     "ESP": {
         "dd_country_id": "9",
         "name": "西班牙",
         "country_code": "ESP",
+        "simple_country_code": "ES",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/esp.png",
     },
     "DEN": {
         "dd_country_id": "10",
         "name": "丹麦",
         "country_code": "DEN",
+        "simple_country_code": "DK",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/den.png",
     },
     "ARG": {
         "dd_country_id": "11",
         "name": "阿根廷",
         "country_code": "ARG",
+        "simple_country_code": "AR",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/arg.png",
     },
     "COL": {
         "dd_country_id": "12",
         "name": "哥伦比亚",
         "country_code": "COL",
+        "simple_country_code": "CO",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/col.png",
     },
     "SWE": {
         "dd_country_id": "14",
         "name": "瑞典",
         "country_code": "SWE",
+        "simple_country_code": "SE",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/swe.png",
     },
     "CHI": {
         "dd_country_id": "15",
         "name": "智利",
         "country_code": "CHI",
+        "simple_country_code": "CL",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/chi.png",
     },
     "NED": {
         "dd_country_id": "16",
         "name": "荷兰",
         "country_code": "NED",
+        "simple_country_code": "NL",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/ned.png",
     },
     "ITA": {
         "dd_country_id": "17",
         "name": "意大利",
         "country_code": "ITA",
+        "simple_country_code": "IT",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/ita.png",
     },
     "MEX": {
         "dd_country_id": "18",
         "name": "墨西哥",
         "country_code": "MEX",
+        "simple_country_code": "MX",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/mex.png",
     },
     "POL": {
         "dd_country_id": "20",
         "name": "波兰",
         "country_code": "POL",
+        "simple_country_code": "PL",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/pol.png",
     },
     "PER": {
         "dd_country_id": "21",
         "name": "秘鲁",
         "country_code": "PER",
+        "simple_country_code": "PE",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/per.png",
     },
     "SEN": {
         "dd_country_id": "23",
         "name": "塞内加尔",
         "country_code": "SEN",
+        "simple_country_code": "SN",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/sen.png",
     },
     "ROU": {
         "dd_country_id": "25",
         "name": "罗马尼亚",
         "country_code": "ROU",
+        "simple_country_code": "RO",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/rou.png",
     },
     "UKR": {
         "dd_country_id": "27",
         "name": "乌克兰",
         "country_code": "UKR",
+        "simple_country_code": "UA",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/ukr.png",
     },
     "TUN": {
         "dd_country_id": "28",
         "name": "突尼斯",
         "country_code": "TUN",
+        "simple_country_code": "TN",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/tun.png",
     },
     "SRB": {
         "dd_country_id": "29",
         "name": "塞尔维亚",
         "country_code": "SRB",
+        "simple_country_code": "RS",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/srb.png",
     },
     "VEN": {
         "dd_country_id": "30",
         "name": "委内瑞拉",
         "country_code": "VEN",
+        "simple_country_code": "VE",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/ven.png",
     },
     "IRL": {
         "dd_country_id": "31",
         "name": "爱尔兰",
         "country_code": "IRL",
+        "simple_country_code": "IE",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/irl.png",
     },
     "SVK": {
         "dd_country_id": "32",
         "name": "斯洛伐克",
         "country_code": "SVK",
+        "simple_country_code": "SK",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/svk.png",
     },
     "AUT": {
         "dd_country_id": "34",
         "name": "奥地利",
         "country_code": "AUT",
+        "simple_country_code": "AT",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/aut.png",
     },
     "BIH": {
         "dd_country_id": "35",
         "name": "波斯尼亚和黑塞哥维那",
         "country_code": "BIH",
+        "simple_country_code": "BA",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/bih.png",
     },
     "PAR": {
         "dd_country_id": "36",
         "name": "巴拉圭",
         "country_code": "PAR",
+        "simple_country_code": "PY",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/par.png",
     },
     "CRC": {
         "dd_country_id": "38",
         "name": "哥斯达黎加",
         "country_code": "CRC",
+        "simple_country_code": "CR",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/crc.png",
     },
     "TUR": {
         "dd_country_id": "39",
         "name": "土耳其",
         "country_code": "TUR",
+        "simple_country_code": "TR",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/tur.png",
     },
     "ISL": {
         "dd_country_id": "40",
         "name": "冰岛",
         "country_code": "ISL",
+        "simple_country_code": "IS",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/isl.png",
     },
     "NGA": {
         "dd_country_id": "42",
         "name": "尼日利亚",
         "country_code": "NGA",
+        "simple_country_code": "NG",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/nga.png",
     },
     "GRE": {
         "dd_country_id": "43",
         "name": "希腊",
         "country_code": "GRE",
+        "simple_country_code": "GR",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/gre.png",
     },
     "MAR": {
         "dd_country_id": "45",
         "name": "摩洛哥",
         "country_code": "MAR",
+        "simple_country_code": "MA",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/mar.png",
     },
     "COD": {
         "dd_country_id": "46",
         "name": "刚果民主共和国",
         "country_code": "COD",
+        "simple_country_code": "CD",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/cod.png",
     },
     "CZE": {
         "dd_country_id": "48",
         "name": "捷克共和国",
         "country_code": "CZE",
+        "simple_country_code": "CZ",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/cze.png",
     },
     "GHA": {
         "dd_country_id": "49",
         "name": "加纳",
         "country_code": "GHA",
+        "simple_country_code": "GH",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/gha.png",
     },
     "NOR": {
         "dd_country_id": "50",
         "name": "挪威",
         "country_code": "NOR",
+        "simple_country_code": "NO",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/nor.png",
     },
     "BUL": {
         "dd_country_id": "51",
         "name": "保加利亚",
         "country_code": "BUL",
+        "simple_country_code": "BG",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/bul.png",
     },
     "HUN": {
         "dd_country_id": "52",
         "name": "匈牙利",
         "country_code": "HUN",
+        "simple_country_code": "HU",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/hun.png",
     },
     "MNE": {
         "dd_country_id": "53",
         "name": "黑山",
         "country_code": "MNE",
+        "simple_country_code": "ME",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/mne.png",
     },
     "CMR": {
         "dd_country_id": "54",
         "name": "喀麦隆",
         "country_code": "CMR",
+        "simple_country_code": "CM",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/cmr.png",
     },
     "QAT": {
         "dd_country_id": "55",
         "name": "卡塔尔",
         "country_code": "QAT",
+        "simple_country_code": "QA",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/qat.png",
     },
     "JAM": {
         "dd_country_id": "56",
         "name": "牙买加",
         "country_code": "JAM",
+        "simple_country_code": "JM",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/jam.png",
     },
     "BFA": {
         "dd_country_id": "58",
         "name": "布基纳法索",
         "country_code": "BFA",
+        "simple_country_code": "BF",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/bfa.png",
     },
     "ECU": {
         "dd_country_id": "59",
         "name": "厄瓜多尔",
         "country_code": "ECU",
+        "simple_country_code": "EC",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/ecu.png",
     },
     "FIN": {
         "dd_country_id": "60",
         "name": "芬兰",
         "country_code": "FIN",
+        "simple_country_code": "FI",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/fin.png",
     },
     "HON": {
         "dd_country_id": "61",
         "name": "洪都拉斯",
         "country_code": "HON",
+        "simple_country_code": "HN",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/hon.png",
     },
     "ALB": {
         "dd_country_id": "62",
         "name": "阿尔巴尼亚",
         "country_code": "ALB",
+        "simple_country_code": "AL",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/alb.png",
     },
     "SVN": {
         "dd_country_id": "63",
         "name": "斯洛文尼亚",
         "country_code": "SVN",
+        "simple_country_code": "SI",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/svn.png",
     },
     "BOL": {
         "dd_country_id": "64",
         "name": "玻利维亚",
         "country_code": "BOL",
+        "simple_country_code": "BO",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/bol.png",
     },
     "MLI": {
         "dd_country_id": "65",
         "name": "马里",
         "country_code": "MLI",
+        "simple_country_code": "ML",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/mli.png",
     },
     "CIV": {
         "dd_country_id": "66",
         "name": "科特迪瓦",
         "country_code": "CIV",
+        "simple_country_code": "CI",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/civ.png",
     },
     "UAE": {
         "dd_country_id": "67",
         "name": "阿拉伯联合酋长国",
         "country_code": "UAE",
+        "simple_country_code": "AE",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/uae.png",
     },
     "MKD": {
         "dd_country_id": "68",
         "name": "北马其顿",
         "country_code": "MKD",
+        "simple_country_code": "MK",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/mkd.png",
     },
     "ALG": {
         "dd_country_id": "70",
         "name": "阿尔及利亚",
         "country_code": "ALG",
+        "simple_country_code": "DZ",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/alg.png",
     },
     "SLV": {
         "dd_country_id": "71",
         "name": "萨尔瓦多",
         "country_code": "SLV",
+        "simple_country_code": "SV",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/slv.png",
     },
     "KSA": {
         "dd_country_id": "72",
         "name": "沙特阿拉伯",
         "country_code": "KSA",
+        "simple_country_code": "SA",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/ksa.png",
     },
     "PAN": {
         "dd_country_id": "74",
         "name": "巴拿马",
         "country_code": "PAN",
+        "simple_country_code": "PA",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/pan.png",
     },
     "CPV": {
         "dd_country_id": "76",
         "name": "佛得角",
         "country_code": "CPV",
+        "simple_country_code": "CV",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/cpv.png",
     },
     "IRQ": {
         "dd_country_id": "77",
         "name": "伊拉克",
         "country_code": "IRQ",
+        "simple_country_code": "IQ",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/irq.png",
     },
     "UGA": {
         "dd_country_id": "79",
         "name": "乌干达",
         "country_code": "UGA",
+        "simple_country_code": "UG",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/uga.png",
     },
     "ZAM": {
         "dd_country_id": "80",
         "name": "赞比亚",
         "country_code": "ZAM",
+        "simple_country_code": "ZM",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/zam.png",
     },
     "BLR": {
         "dd_country_id": "81",
         "name": "白俄罗斯",
         "country_code": "BLR",
+        "simple_country_code": "BY",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/blr.png",
     },
     "ISR": {
         "dd_country_id": "84",
         "name": "以色列",
         "country_code": "ISR",
+        "simple_country_code": "IL",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/isr.png",
     },
     "UZB": {
         "dd_country_id": "85",
         "name": "乌兹别克斯坦",
         "country_code": "UZB",
+        "simple_country_code": "UZ",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/uzb.png",
     },
     "LUX": {
         "dd_country_id": "86",
         "name": "卢森堡",
         "country_code": "LUX",
+        "simple_country_code": "LU",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/lux.png",
     },
     "LBN": {
         "dd_country_id": "87",
         "name": "黎巴嫩",
         "country_code": "LBN",
+        "simple_country_code": "LB",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/lbn.png",
     },
     "OMA": {
         "dd_country_id": "88",
         "name": "阿曼",
         "country_code": "OMA",
+        "simple_country_code": "OM",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/oma.png",
     },
     "CYP": {
         "dd_country_id": "89",
         "name": "塞浦路斯",
         "country_code": "CYP",
+        "simple_country_code": "CY",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/cyp.png",
     },
     "GAB": {
         "dd_country_id": "90",
         "name": "加蓬",
         "country_code": "GAB",
+        "simple_country_code": "GA",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/gab.png",
     },
     "BEN": {
         "dd_country_id": "91",
         "name": "贝宁",
         "country_code": "BEN",
+        "simple_country_code": "BJ",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/ben.png",
     },
     "CGO": {
         "dd_country_id": "92",
         "name": "刚果共和国",
         "country_code": "CGO",
+        "simple_country_code": "CG",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/cgo.png",
     },
     "TRI": {
         "dd_country_id": "93",
         "name": "特立尼达和多巴哥",
         "country_code": "TRI",
-        "flag_url": "https://app-cdn.diandian.com/country/tri.png",
+        "simple_country_code": "TT",  # 新增
+        "flag_url": "https:// app-cdn.diandian.com/country/tri.png",
     },
     "GEO": {
         "dd_country_id": "94",
         "name": "格鲁吉亚",
         "country_code": "GEO",
+        "simple_country_code": "GE",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/geo.png",
     },
     "KGZ": {
         "dd_country_id": "95",
         "name": "吉尔吉斯斯坦",
         "country_code": "KGZ",
+        "simple_country_code": "KG",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/kgz.png",
     },
     "EST": {
         "dd_country_id": "96",
         "name": "爱沙尼亚",
         "country_code": "EST",
+        "simple_country_code": "EE",  # 新增
         "flag_url": "https://app-cdn.diandian.com/country/est.png",
+    },
+    "JOR": {
+        "dd_country_id": "97",
+        "name": "约旦",
+        "country_code": "JOR",
+        "simple_country_code": "JO",  # 新增
+        "flag_url": "https://app-cdn.diandian.com/country/jor.png",
+    },
+    "VIE": {
+        "dd_country_id": "98",
+        "name": "越南",
+        "country_code": "VIE",
+        "simple_country_code": "VN",  # 新增
+        "flag_url": "https://app-cdn.diandian.com/country/vie.png",
     },
     "JOR": {
         "dd_country_id": "97",

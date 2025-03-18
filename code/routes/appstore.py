@@ -66,13 +66,18 @@ def search():
         return build_response("SERVER_ERROR"), 500
 
 @appstore_bp.route("/detail", methods=["GET", "POST", "PUT", "DELETE"])
-@appstore_bp.route("/detail/<path:path>", methods=["GET", "POST", "PUT", "DELETE"])
 def detail():
     try:
         market = request.args.get("market")
         region = request.args.get("region")
         appid = request.args.get("appid")
-        sp = request.args.get("sp",default="diandian")
+        st = request.args.get("st")
+        if st is None or st == "":
+            st = market 
+        
+        if region is None or region == "":
+            region = "CHN"
+            
         # 参数校验
         if not all([market, region, appid]):
             return build_response("MISSING_PARAMETERS"), 400
@@ -85,7 +90,7 @@ def detail():
 
          # 调用 AppStoreService 获取应用详情
         service = AppStoreService()
-        result = service.detail(market, region, appid, sp)
+        result = service.detail(market, region, appid, st)
         return build_response("SUCCESS", result)
 
     except Exception as e:

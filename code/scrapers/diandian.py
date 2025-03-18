@@ -1,4 +1,5 @@
 import pickle
+import random
 import requests
 import execjs
 import re
@@ -77,7 +78,8 @@ class DiandianScraper:
             'width_google_other_data': '0',
             'market_type': '0' if market == 'ios' else '-1'
         }
-
+    # http://localhost:9000/api/appstore/search?market=ios&region=CHN&keyword=weixin&page=1&pagesize=20&sp=diandian
+    # 应用搜索接口
     def search(self, market: str, region: str, keyword: str, page: int = 1, pagesize: int = 20) -> Dict[str, Any]:
         # 验证应用商店和地区
         market, region = self._validate_market_and_region(market, region)
@@ -106,8 +108,27 @@ class DiandianScraper:
             headers=self.headers,
             cookies=self.cookies
         )
-        return response.json()
+        response.raise_for_status()
+        apps = response.json().get("data", [])["list"]
+         # 添加调试信息
+        result = []
+        for app in apps:
+            print(f"Processing app: {app}")  # 打印出正在处理的app数据
+            try:
+                if app is None or app.get("app") is None or app.get("app").get("app_id") is None:
+                    continue
+                result.append(self._standardize_app_info(market, app["app"]))
+            except Exception as e:
+                print("---------------------------------------------")  
+                print(f"Error processing app: {app}")  # 打印出有问题的app数据
+                print(f"Error details: {str(e)}")  # 打印错误详情
+                raise  # 重新抛出异常以便调试
 
+        return result
+        # return  [self._standardize_app_info(market,app["app"]) for app in apps]
+
+    # http://localhost:9000/api/appstore/detail?market=ios&region=CHN&sp=diandian&appid=492ududjqxzr9aj
+    # 应用详情接口
     def detail(self, market: str, region: str, appid: str) -> Dict[str, Any]:
         # 获取加密参数
         content = requests.get("https://app.diandian.com/", headers=self.headers, cookies=self.cookies).text
@@ -152,4 +173,39 @@ class DiandianScraper:
             headers=self.headers,
             cookies=self.cookies
         )
-        return response.json()
+        response.raise_for_status()
+        app_info = response.json().get("data", {})
+            
+        return self._standardize_app_info(market,app_info)
+    
+    def _standardize_app_info(self, market,app_info: Dict[str, Any]) -> Dict[str, Any]:
+        """标准化iOS应用信息"""
+        # 安全处理screenshots字段
+        screenshots = []
+        if app_info.get("screenshots"):
+            try:
+                screenshots = app_info["screenshots"][0].get("list", [])
+            except (IndexError, KeyError, AttributeError):
+                pass
+            
+        return {
+            "app_name": app_info.get("name", ""),
+            "app_id": app_info.get("app_id", ""),
+            "icon_url": app_info.get("logo", ""),
+            "tags": app_info.get("genres", []),
+            "developer": app_info.get("developer", "")["name"],
+            "download_count": 0,
+            "icp_number": "",
+            "introduction": "",
+            "bounde_id": app_info.get("bundle_id", ""),
+            "rating": app_info.get("rating", 0.0),
+            "rating_count": app_info.get("rating_count", 0),
+            "screenshots": screenshots,
+            "store": market,
+            "update_time": app_info.get("last_release_time", ""),
+            "version": app_info.get("version", ""),
+            "download_url": app_info.get("download_url", ""),
+            "region": app_info.get("country_id", ""),
+            "dd_id": app_info.get("id", ""),
+            "ft_id":random.randint(100000, 999999)
+        }
