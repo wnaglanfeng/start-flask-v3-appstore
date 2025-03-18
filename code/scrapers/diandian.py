@@ -145,9 +145,9 @@ class DiandianScraper:
         
         # 生成请求参数
         params = {
-            'market_id': f'{str(market_info['dd_market_id'])}',
+            'market_id': str(market_info['dd_market_id']),  # 直接使用str()转换
             'id': f'{appid}',
-            'country_id': f'{str(region_info['dd_country_id'])}',
+            'country_id': str(region_info['dd_country_id']),  # 直接使用str()转换
             'language_id': '3'  # 默认语言ID，可根据需要调整
         }
         
